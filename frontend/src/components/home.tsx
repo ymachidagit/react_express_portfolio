@@ -1,4 +1,5 @@
 import Header from './commonLayouts/header';
+import Footer from './commonLayouts/footer';
 
 function Home() {
   return(
@@ -7,6 +8,7 @@ function Home() {
       <div>
         <h1 className="">Home</h1>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
