@@ -1,4 +1,4 @@
-function BIPROGYDXHACK() {
+function SCSKHackathon() {
   return(
     <div>
       <h1>あ</h1>
@@ -6,4 +6,4 @@ function BIPROGYDXHACK() {
   );
 }
 
-export default BIPROGYDXHACK;
+export default SCSKHackathon;
