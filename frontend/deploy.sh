@@ -6,6 +6,9 @@ set -e
 # ビルド
 npm run build
 
+# 追加 githubpagesでルーティングを実装するため
+cp dist/index.html dist/404.html
+
 # ビルド出力ディレクトリに移動
 cd dist
 
