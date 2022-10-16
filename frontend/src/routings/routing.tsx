@@ -9,17 +9,26 @@ import YtvHackathon from '../components/worksComponents/works/ytvHackathon';
 import {BrowserRouter,  Routes, Route} from 'react-router-dom';
 
 function Routing() {
+  const basePath = "react_express_portfolio"
   return(
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="About" element={<About />}/>
-        <Route path="Works" element={<Works />} />
-        <Route path="Works/Sotsuken" element={<Sotsuken />} />
-        <Route path="Works/BIPROGYDXHACK" element={<BIPROGYDXHACK />} />
-        <Route path="Works/KDGHACKS" element={<KDGHACKS />} />
-        <Route path="Works/BIPROGYSummerIntern" element={<BIPROGYSummerIntern />} />
-        <Route path="Works/YtvHackathon" element={<YtvHackathon />} />
+        {/* <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />}/>
+        <Route path={`${process.env.PUBLIC_URL}/About`} element={<About />}/>
+        <Route path={`${process.env.PUBLIC_URL}/Works`} element={<Works />} />
+        <Route path={`${process.env.PUBLIC_URL}/Works/Sotsuken`} element={<Sotsuken />} />
+        <Route path={`${process.env.PUBLIC_URL}/Works/BIPROGYDXHACK`} element={<BIPROGYDXHACK />} />
+        <Route path={`${process.env.PUBLIC_URL}/Works/KDGHACKS`} element={<KDGHACKS />} />
+        <Route path={`${process.env.PUBLIC_URL}/Works/BIPROGYSummerIntern`} element={<BIPROGYSummerIntern />} />
+        <Route path={`${process.env.PUBLIC_URL}/Works/YtvHackathon`} element={<YtvHackathon />} /> */}
+        <Route path={`${basePath}/`} element={<Home />}/>
+        <Route path={`${basePath}/About`} element={<About />}/>
+        <Route path={`${basePath}/Works`} element={<Works />} />
+        <Route path={`${basePath}/Works/Sotsuken`} element={<Sotsuken />} />
+        <Route path={`${basePath}/Works/BIPROGYDXHACK`} element={<BIPROGYDXHACK />} />
+        <Route path={`${basePath}/Works/KDGHACKS`} element={<KDGHACKS />} />
+        <Route path={`${basePath}/Works/BIPROGYSummerIntern`} element={<BIPROGYSummerIntern />} />
+        <Route path={`${basePath}/Works/YtvHackathon`} element={<YtvHackathon />} />
       </Routes>
     </BrowserRouter>
   );
