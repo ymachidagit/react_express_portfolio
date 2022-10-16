@@ -1,6 +1,5 @@
 import Link from 'react-router-dom';
 function Header() {
-  // const basePath="react"
   return(
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-green-300">
       <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
