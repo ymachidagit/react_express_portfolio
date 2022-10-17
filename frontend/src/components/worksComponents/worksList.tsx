@@ -23,7 +23,7 @@ const workList = [
     abstract: "LINEチャットボットを利用したタスク状況管理システム",
     motive: "BIPROGY DX HACK",
     purpose: "リモートワークにより質問していいタイミングかどうかがわかりづらい",
-    myRole: "kintoneからのデータ取得",
+    myRole: "kintone APIを利用したタスク状況のデータベースへの登録・更新及びデータベースからの取得",
     award: "LINE賞",
     path: "BIPROGYDXHACK",
     imgPath: nozokimi_man

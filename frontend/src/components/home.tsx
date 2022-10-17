@@ -7,8 +7,8 @@ function Home() {
       <Header></Header>
       <div className="container mx-auto flex flex-wrap p-10 flex-col items-center bg-green-200">
         <h1 className="">Home</h1>
-      </div>
       <Footer></Footer>
+      </div>
     </div>
   );
 }

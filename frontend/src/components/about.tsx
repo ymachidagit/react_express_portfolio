@@ -14,10 +14,9 @@ function About() {
         </div>
         <p className="lg:w-1/2 w-full leading-relaxed flex flex-wrap mb-20 text-gray-500">自己紹介</p>
         <div className="flex flex-wrap -m-4">
-          
         </div>
-      </div>
       <Footer></Footer>
+      </div>
     </div>
   );
 }
