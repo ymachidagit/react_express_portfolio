@@ -22,7 +22,7 @@ function SCSKHackathon() {
         <div className="tab w-full overflow-hidden border-t">
           <input className="absolute opacity-0 " id="tab-multi-2" type="checkbox" name="tabs"/>
           <label className="sm:text-xl text-xm font-medium title-font block  leading-normal cursor-pointer pr-3" htmlFor="tab-multi-2">概要</label>
-          <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+          <div className="h-1 w-10 bg-indigo-500 rounded"></div>
           <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal mb-5">
             <p className="p-5">{work.abstract}</p>
           </div>
@@ -54,7 +54,7 @@ function SCSKHackathon() {
         <div className="tab w-full overflow-hidden border-t">
           <input className="absolute opacity-0 " id="tab-multi-6" type="checkbox" name="tabs"/>
           <label className="sm:text-xl text-xm font-medium title-font block  leading-normal cursor-pointer pr-3" htmlFor="tab-multi-6">賞</label>
-          <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+          <div className="h-1 w-6 bg-indigo-500 rounded"></div>
           <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal mb-5">
             <p className="p-5">{work.award}</p>
           </div>
