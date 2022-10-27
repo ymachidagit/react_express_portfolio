@@ -44,6 +44,8 @@ function Works() {
                     <h2 className="text-lg text-gray-900 font-medium title-font mb-4">{item.title}</h2>
                     <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">ABSTRACT</h3>
                     <p className="leading-relaxed text-base">{item.abstract}</p>
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">AWARD</h3>
+                    <p className="leading-relaxed text-base">{item.award}</p>
                   </div>
                 </a>
               </motion.div>
