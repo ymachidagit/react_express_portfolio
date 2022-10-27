@@ -14,6 +14,12 @@ function BIPROGYSummerIntern() {
     <div>
       <Header></Header>
       <div className="container mx-auto flex flex-wrap p-10 flex-col bg-green-200">
+        <div className="flex flex-wrap w-full mb-3">
+          <div className="inline mb-6 lg:mb-0">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">{work.title}</h1>
+            <div className="h-1 w-full bg-indigo-500 rounded"></div>
+          </div>
+        </div>
         <div className="tab w-full overflow-hidden border-t">
           <input className="absolute opacity-0 " id="tab-multi-1" type="checkbox" name="tabs"/>
           <label className="sm:text-xl text-xm font-medium title-font block  leading-normal cursor-pointer pr-3" htmlFor="tab-multi-1">開発の経緯</label>
