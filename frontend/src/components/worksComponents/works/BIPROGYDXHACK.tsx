@@ -4,6 +4,7 @@ import workList from '../../worksComponents/worksList';
 import {WorkTitle, WorkAbstract, WorkMotive, WorkPurpose, WorkTeckStack, WorkMyRole, WorkAward} from '../commonLayouts/workTemplate';
 import ukagaukun1 from '../../../../public/images/ukagaukun1.png'
 import ukagaukun2 from '../../../../public/images/ukagaukun2.png'
+import {Accordion as FlowbiteAccordion } from 'flowbite-react';
 
 
 const BIPROGYDXHACK = () => {
@@ -20,15 +21,18 @@ const BIPROGYDXHACK = () => {
         <WorkPurpose work={work}/>
         <WorkTeckStack work={work}/>
         <WorkMyRole work={work}/>
-        {/* <div className="tab w-full overflow-hidden border-t">
-          <input className="absolute opacity-0 " id="tab-multi-detail" type="checkbox" name="tabs"/>
-          <label className="sm:text-xl text-xm font-medium title-font block  leading-normal cursor-pointer pr-3" htmlFor="tab-multi-detail">詳細</label>
-          <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal mb-5">
-            <img className="mx-auto" src={ukagaukun1}></img>
-            <img className="mx-auto" src={ukagaukun2}></img>
-          </div>
-        </div> */}
         <WorkAward work={work}/>
+        <FlowbiteAccordion alwaysOpen={true}>
+          <FlowbiteAccordion.Panel>
+            <FlowbiteAccordion.Title className="bg-green-300 hover:bg-green-100 sm:text-xl text-xm font-medium title-font cursor-pointer pr-3">
+              {'詳細'}
+            </FlowbiteAccordion.Title>
+            <FlowbiteAccordion.Content>
+              <img className="mx-auto" src={ukagaukun1}></img>
+              <img className="mx-auto" src={ukagaukun2}></img>
+            </FlowbiteAccordion.Content>
+          </FlowbiteAccordion.Panel>
+        </FlowbiteAccordion>
         <Footer></Footer>
       </div>
     </div>

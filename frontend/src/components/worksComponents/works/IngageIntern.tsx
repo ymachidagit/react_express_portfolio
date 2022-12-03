@@ -8,6 +8,7 @@ import librarianDetail3 from '../../../../public/images/librarianDetail3.png'
 import librarianDetail4 from '../../../../public/images/librarianDetail4.png'
 import librarianDetail5 from '../../../../public/images/librarianDetail5.png'
 import librarianDetail6 from '../../../../public/images/librarianDetail6.png'
+import {Accordion as FlowbiteAccordion } from 'flowbite-react';
 
 function IngageIntern() {
   const work = workList[5]
@@ -22,25 +23,28 @@ function IngageIntern() {
         <WorkPurpose work={work}/>
         <WorkTeckStack work={work}/>
         <WorkMyRole work={work}/>
-        {/* <div className="tab w-full overflow-hidden border-t">
-          <input className="absolute opacity-0 " id="tab-multi-detail" type="checkbox" name="tabs"/>
-          <label className="sm:text-xl text-xm font-medium title-font block  leading-normal cursor-pointer pr-3" htmlFor="tab-multi-detail">詳細</label>
-          <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal mb-5">
-            <img className="mx-auto" src={librarianDetail1}></img>
-            <p className="text-center mb-5">寄贈されている図書の一覧画面</p>
-            <img className="mx-auto" src={librarianDetail2}></img>
-            <p className="text-center mb-5">借りている図書の一覧画面</p>
-            <img className="mx-auto" src={librarianDetail3}></img>
-            <p className="text-center mb-5">寄贈する図書の登録画面</p>
-            <img className="mx-auto" src={librarianDetail4}></img>
-            <p className="text-center mb-5">著者の登録画面</p>
-            <img className="mx-auto" src={librarianDetail5}></img>
-            <p className="text-center mb-5">マイページ</p>
-            <img className="mx-auto" src={librarianDetail6}></img>
-            <p className="text-center">ランキングページ</p>
-          </div>
-        </div> */}
         <WorkAward work={work}/>
+        <FlowbiteAccordion alwaysOpen={true}>
+          <FlowbiteAccordion.Panel>
+            <FlowbiteAccordion.Title className="bg-green-300 hover:bg-green-100 sm:text-xl text-xm font-medium title-font cursor-pointer pr-3">
+              {'詳細'}
+            </FlowbiteAccordion.Title>
+            <FlowbiteAccordion.Content>
+              <img className="mx-auto" src={librarianDetail1}></img>
+              <p className="text-center mb-5">寄贈されている図書の一覧画面</p>
+              <img className="mx-auto" src={librarianDetail2}></img>
+              <p className="text-center mb-5">借りている図書の一覧画面</p>
+              <img className="mx-auto" src={librarianDetail3}></img>
+              <p className="text-center mb-5">寄贈する図書の登録画面</p>
+              <img className="mx-auto" src={librarianDetail4}></img>
+              <p className="text-center mb-5">著者の登録画面</p>
+              <img className="mx-auto" src={librarianDetail5}></img>
+              <p className="text-center mb-5">マイページ</p>
+              <img className="mx-auto" src={librarianDetail6}></img>
+              <p className="text-center">ランキングページ</p>
+            </FlowbiteAccordion.Content>
+          </FlowbiteAccordion.Panel>
+        </FlowbiteAccordion>
         <Footer></Footer>
       </div>
     </div>

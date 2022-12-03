@@ -26,7 +26,7 @@ export const WorkTitle = ({work}: {work: workType}) => {
 export const WorkMotive = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      text: '開発の経緯',
+      title: '開発の経緯',
       content: work.motive
     }}/>
     
@@ -36,7 +36,7 @@ export const WorkMotive = ({work}: {work: workType})  => {
 export const WorkAbstract = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      text: '概要',
+      title: '概要',
       content: work.abstract
     }}/>
   )
@@ -45,7 +45,7 @@ export const WorkAbstract = ({work}: {work: workType})  => {
 export const WorkPurpose = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      text: '目的',
+      title: '目的',
       content: work.purpose
     }}/>
   )
@@ -54,7 +54,7 @@ export const WorkPurpose = ({work}: {work: workType})  => {
 export const WorkTeckStack = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      text: '技術スタック',
+      title: '技術スタック',
       content: work.techStack
     }}/>
   )
@@ -63,7 +63,7 @@ export const WorkTeckStack = ({work}: {work: workType})  => {
 export const WorkMyRole = ({work}: {work: workType}) => {
   return(
     <Accordion content={{
-      text: '自分の役割',
+      title: '自分の役割',
       content: work.myRole
     }}/>
   )
@@ -72,7 +72,7 @@ export const WorkMyRole = ({work}: {work: workType}) => {
 export const WorkAward = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      text: '賞',
+      title: '賞',
       content: work.award
     }}/>
   )

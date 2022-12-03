@@ -1,7 +1,7 @@
 import {Accordion as FlowbiteAccordion } from 'flowbite-react';
 
 type contentType = {
-  text: string,
+  title: string,
   content: string
 }
 
@@ -10,7 +10,7 @@ export const Accordion = ({content}:{content:contentType}) => {
     <FlowbiteAccordion alwaysOpen={true}>
       <FlowbiteAccordion.Panel>
         <FlowbiteAccordion.Title className="bg-green-300 hover:bg-green-100 sm:text-xl text-xm font-medium title-font cursor-pointer pr-3">
-          {content.text}
+          {content.title}
         </FlowbiteAccordion.Title>
         <FlowbiteAccordion.Content>
           <p className="mb-2 text-gray-900">
