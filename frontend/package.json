@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "flowbite": "^1.5.4",
+    "flowbite-react": "^0.3.6",
     "framer-motion": "^7.5.3",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",

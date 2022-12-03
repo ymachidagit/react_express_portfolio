@@ -1,5 +1,4 @@
-import './workTab.css'
-import { Accordion } from './accordion';
+import {Accordion} from './accordion'
 
 export type workType = {
   title: string,
@@ -27,17 +26,16 @@ export const WorkTitle = ({work}: {work: workType}) => {
 export const WorkMotive = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      id: '1',
       text: '開発の経緯',
       content: work.motive
     }}/>
+    
   )
 }
 
 export const WorkAbstract = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      id: '2',
       text: '概要',
       content: work.abstract
     }}/>
@@ -47,7 +45,6 @@ export const WorkAbstract = ({work}: {work: workType})  => {
 export const WorkPurpose = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      id: '3',
       text: '目的',
       content: work.purpose
     }}/>
@@ -57,7 +54,6 @@ export const WorkPurpose = ({work}: {work: workType})  => {
 export const WorkTeckStack = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      id: '4',
       text: '技術スタック',
       content: work.techStack
     }}/>
@@ -67,7 +63,6 @@ export const WorkTeckStack = ({work}: {work: workType})  => {
 export const WorkMyRole = ({work}: {work: workType}) => {
   return(
     <Accordion content={{
-      id: '5',
       text: '自分の役割',
       content: work.myRole
     }}/>
@@ -77,7 +72,6 @@ export const WorkMyRole = ({work}: {work: workType}) => {
 export const WorkAward = ({work}: {work: workType})  => {
   return(
     <Accordion content={{
-      id: '6',
       text: '賞',
       content: work.award
     }}/>

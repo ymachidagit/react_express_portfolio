@@ -1,17 +1,23 @@
+import {Accordion as FlowbiteAccordion } from 'flowbite-react';
+
 type contentType = {
-  id: string,
   text: string,
   content: string
 }
 
 export const Accordion = ({content}:{content:contentType}) => {
-  return(
-    <div className="tab w-full overflow-hidden border-t">
-      <input className="absolute opacity-0 " id={content.id} type="checkbox" name="tabs"/>
-      <label className="sm:text-xl text-xm font-medium title-font block  leading-normal cursor-pointer pr-3" htmlFor={content.id}>{content.text}</label>
-      <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal mb-5">
-        <p className="p-5">{content.content}</p>
-      </div>
-    </div>
-  )
+  return (
+    <FlowbiteAccordion alwaysOpen={true}>
+      <FlowbiteAccordion.Panel>
+        <FlowbiteAccordion.Title className="bg-green-300 hover:bg-green-100 sm:text-xl text-xm font-medium title-font cursor-pointer pr-3">
+          {content.text}
+        </FlowbiteAccordion.Title>
+        <FlowbiteAccordion.Content>
+          <p className="mb-2 text-gray-900">
+            {content.content}
+          </p>
+        </FlowbiteAccordion.Content>
+      </FlowbiteAccordion.Panel>
+    </FlowbiteAccordion>
+  );
 }
