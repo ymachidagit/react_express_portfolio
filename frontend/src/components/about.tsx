@@ -1,7 +1,6 @@
 import Header from './commonLayouts/header';
 import Footer from './commonLayouts/footer';
 import Profile from './profile';
-import nozokimiman from '../../public/images/nozokimi_man.png'
 import M2374w from '../../public/images/M2374w.png'
 
 function About() {

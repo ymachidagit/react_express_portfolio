@@ -1,4 +1,3 @@
-import Home from '../components/home';
 import About from '../components/about';
 import Works from '../components/works';
 import Sotsuken from '../components/worksComponents/works/sotsuken';
@@ -14,8 +13,7 @@ function Routing() {
   return(
     <BrowserRouter basename="/react_express_portfolio/">
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
+        <Route path="/" element={<About />}/>
         <Route path="/works" element={<Works />}/>
         <Route path="/works/sotsuken" element={<Sotsuken />}/>
         <Route path="/works/BIPROGYDXHACK" element={<BIPROGYDXHACK />}/>

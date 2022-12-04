@@ -1,4 +1,3 @@
-import Link from 'react-router-dom';
 import {motion} from 'framer-motion';
 
 function Header() {
@@ -8,8 +7,7 @@ function Header() {
         <span className="ml-3 text-xl">ポートフォリオ</span>
       </a>
       <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-indigo-500	flex flex-wrap items-center text-base justify-center">
-        <motion.a href="/react_express_portfolio/" className="mr-5 hover:text-gray-500" whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }}>Home</motion.a>
-        <motion.a href="/react_express_portfolio/about" className="mr-5 hover:text-gray-500" whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }}>About</motion.a>
+        <motion.a href="/react_express_portfolio/" className="mr-5 hover:text-gray-500" whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }}>About</motion.a>
         <motion.a href="/react_express_portfolio/works" className="mr-5 hover:text-gray-500" whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }}>Works</motion.a>
       </nav>
     </div>
