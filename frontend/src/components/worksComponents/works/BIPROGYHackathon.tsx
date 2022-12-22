@@ -2,13 +2,15 @@ import Header from '../../commonLayouts/header';
 import Footer from '../../commonLayouts/footer';
 import workList from '../../worksComponents/worksList';
 import {WorkTitle, WorkAbstract, WorkMotive, WorkPurpose, WorkTeckStack, WorkMyRole, WorkAward} from '../commonLayouts/workTemplate';
-import quizVSDetail1 from '../../../../public/images/quizVSDetail1.png'
-import quizVSDetail2 from '../../../../public/images/quizVSDetail2.png'
-import quizVSDetail3 from '../../../../public/images/quizVSDetail3.png'
 import {Accordion as FlowbiteAccordion } from 'flowbite-react';
+import dokuon from '../../../../public/images/dokuon.png'
+import dokuonsearch from '../../../../public/images/dokuonsearch.png'
+import dokuonSystem from '../../../../public/images/dokuonSystem.png'
 
-function YtvHackathon() {
-  const work = workList[3]
+
+const BIPROGYHackathon = () => {
+
+  const work = workList[7]
 
   return(
     <div>
@@ -28,9 +30,12 @@ function YtvHackathon() {
             </FlowbiteAccordion.Title>
             <FlowbiteAccordion.Content>
               <div className="mx-auto">
-                <img className="mb-3" src={quizVSDetail1}></img>
-                <img className="mb-3" src={quizVSDetail2}></img>
-                <img src={quizVSDetail3}></img>
+                <img src={dokuonSystem}></img>
+                <p className="text-center mb-3">システム構成図</p>
+                <img src={dokuon}></img>
+                <p className="text-center mb-3">アプリ概要</p>
+                <img src={dokuonsearch}></img>
+                <p className="text-center">検索機能</p>
               </div>
             </FlowbiteAccordion.Content>
           </FlowbiteAccordion.Panel>
@@ -38,7 +43,6 @@ function YtvHackathon() {
         <Footer></Footer>
       </div>
     </div>
-  );
+  )
 }
-
-export default YtvHackathon;
+export default BIPROGYHackathon;

@@ -25,8 +25,10 @@ function KDGHACKS() {
               {'詳細'}
             </FlowbiteAccordion.Title>
             <FlowbiteAccordion.Content>
-              <img className="mx-auto" src={remodameshiDetail}></img>
-              <p className="mx-auto">※表情認識による恐怖度推定は期限内に実装できなかった</p>
+              <div className="mx-auto">
+                <img src={remodameshiDetail}></img>
+                <p className="text-xl">※表情認識による恐怖度推定は期限内に実装できなかった</p>
+              </div>
             </FlowbiteAccordion.Content>
           </FlowbiteAccordion.Panel>
         </FlowbiteAccordion>

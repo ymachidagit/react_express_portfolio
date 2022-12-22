@@ -27,9 +27,11 @@ function SCSKHackathon() {
               {'詳細'}
             </FlowbiteAccordion.Title>
             <FlowbiteAccordion.Content>
-              <img className="mx-auto" src={mimamoriDetail1}></img>
-              <img className="mx-auto" src={mimamoriDetail2}></img>
-              <img className="mx-auto" src={mimamoriDetail3}></img>
+              <div className="mx-auto">
+                <img className="mb-3" src={mimamoriDetail1}></img>
+                <img className="mb-3" src={mimamoriDetail2}></img>
+                <img src={mimamoriDetail3}></img>
+              </div>
             </FlowbiteAccordion.Content>
           </FlowbiteAccordion.Panel>
         </FlowbiteAccordion>

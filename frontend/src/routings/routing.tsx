@@ -7,6 +7,7 @@ import YtvHackathon from '../components/worksComponents/works/ytvHackathon';
 import IngageIntern from '../components/worksComponents/works/IngageIntern';
 import BIPROGYSummerIntern from '../components/worksComponents/works/BIPROGYSummerIntern';
 import SCSKHackathon from '../components/worksComponents/works/SCSKHackathon';
+import BIPROGYHackathon from '../components/worksComponents/works/BIPROGYHackathon';
 import {BrowserRouter,  Routes, Route} from 'react-router-dom';
 
 function Routing() {
@@ -16,12 +17,13 @@ function Routing() {
         <Route path="/" element={<About />}/>
         <Route path="/works" element={<Works />}/>
         <Route path="/works/sotsuken" element={<Sotsuken />}/>
-        <Route path="/works/BIPROGYDXHACK" element={<BIPROGYDXHACK />}/>
-        <Route path="/works/KDGHACKS" element={<KDGHACKS />}/>
-        <Route path="/works/ytvHackathon" element={<YtvHackathon />}/>
-        <Route path="/works/IngageIntern" element={<IngageIntern />}/>
-        <Route path="/works/BIPROGYSummerIntern" element={<BIPROGYSummerIntern />}/>
-        <Route path="/works/SCSKHackathon" element={<SCSKHackathon />}/>
+        <Route path="/works/hackathon1" element={<BIPROGYDXHACK />}/>
+        <Route path="/works/hackathon2" element={<KDGHACKS />}/>
+        <Route path="/works/hackathon3" element={<YtvHackathon />}/>
+        <Route path="/works/intern1" element={<BIPROGYSummerIntern />}/>
+        <Route path="/works/intern2" element={<IngageIntern />}/>
+        <Route path="/works/hackathon4" element={<SCSKHackathon />}/>
+        <Route path="/works/hackathon5" element={<BIPROGYHackathon />}/>
       </Routes>
     </BrowserRouter>
   );

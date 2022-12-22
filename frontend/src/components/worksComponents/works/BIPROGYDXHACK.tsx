@@ -28,8 +28,10 @@ const BIPROGYDXHACK = () => {
               {'詳細'}
             </FlowbiteAccordion.Title>
             <FlowbiteAccordion.Content>
-              <img className="mx-auto" src={ukagaukun1}></img>
-              <img className="mx-auto" src={ukagaukun2}></img>
+              <div className="mx-auto">
+                <img src={ukagaukun1}></img>
+                <img src={ukagaukun2}></img>
+              </div>
             </FlowbiteAccordion.Content>
           </FlowbiteAccordion.Panel>
         </FlowbiteAccordion>
