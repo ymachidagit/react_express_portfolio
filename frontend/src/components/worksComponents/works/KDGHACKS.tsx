@@ -2,6 +2,7 @@ import Header from '../../commonLayouts/header';
 import Footer from '../../commonLayouts/footer';
 import workList from '../../worksComponents/worksList';
 import {WorkTitle, WorkAbstract, WorkMotive, WorkPurpose, WorkTeckStack, WorkMyRole, WorkAward} from '../commonLayouts/workTemplate';
+import remodameshi from '../../../../public/images/remodameshi.png'
 import remodameshiDetail from '../../../../public/images/remodameshiDetail.png'
 import {Accordion as FlowbiteAccordion } from 'flowbite-react';
 
@@ -26,6 +27,8 @@ function KDGHACKS() {
             </FlowbiteAccordion.Title>
             <FlowbiteAccordion.Content>
               <div className="mx-auto">
+                <img src={remodameshi}></img>
+                <p className="text-center mb-5">アプリ画面</p>
                 <img src={remodameshiDetail}></img>
                 <p className="text-xl">※表情認識による恐怖度推定は期限内に実装できなかった</p>
               </div>

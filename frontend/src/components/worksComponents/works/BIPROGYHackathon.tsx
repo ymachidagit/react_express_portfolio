@@ -33,7 +33,7 @@ const BIPROGYHackathon = () => {
                 <img src={dokuonSystem}></img>
                 <p className="text-center mb-3">システム構成図</p>
                 <img src={dokuon}></img>
-                <p className="text-center mb-3">アプリ概要</p>
+                <p className="text-center mb-3">アプリ画面</p>
                 <img src={dokuonsearch}></img>
                 <p className="text-center">検索機能</p>
               </div>
